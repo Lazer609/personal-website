@@ -1,35 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Resume</title>
+    <title>Resume | Adithya V</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<h2>Resume</h2>
+<header>
+    <h1>Resume</h1>
+</header>
 
-<h3>Objective</h3>
-<p>To obtain a challenging position in software development.</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="biodata.html">Bio-Data</a>
+    <a href="contact.html">Contact</a>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+</nav>
 
-<h3>Education</h3>
-<ul>
-    <li>B.E in Computer Science – VTU</li>
-</ul>
+<div class="container fade-in">
 
-<h3>Technical Skills</h3>
-<ul>
-    <li>Python, Java, JavaScript</li>
-    <li>HTML, CSS, React</li>
-    <li>Machine Learning Basics</li>
-</ul>
+    <section class="card">
+        <h2>Career Objective</h2>
+        <p>
+            To secure a challenging position in software development where I
+            can apply my technical knowledge and grow professionally.
+        </p>
+    </section>
 
-<h3>Projects</h3>
-<ul>
-    <li>AI Voice Tutor</li>
-    <li>Chatbot using NLP</li>
-</ul>
+    <section class="card reveal">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.E – Computer Science</strong> (VTU)</li>
+            <li>Expected Graduation: 2027</li>
+        </ul>
+    </section>
 
-<a href="index.html">Back to Home</a>
+    <section class="card">
+        <h2>Technical Skills</h2>
 
+        <div class="skill">
+            <span>HTML</span>
+            <div class="progress"><div data-skill="90"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>CSS</span>
+            <div class="progress"><div data-skill="85"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress"><div data-skill="75"></div></div>
+        </div>
+
+        <div class="skill">
+            <span>Python</span>
+            <div class="progress"><div data-skill="80"></div></div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>AI Voice Tutor using ASR & TTS</li>
+            <li>NLP-based Chatbot</li>
+            <li>Web Resume Portfolio</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    © 2025 Adithya V
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
